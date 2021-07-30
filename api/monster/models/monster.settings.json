@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monsters",
+  "info": {
+    "name": "Monster",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "name_jp": {
+      "type": "string"
+    },
+    "pokemon_types": {
+      "collection": "type",
+      "via": "monsters",
+      "dominant": true
+    }
+  }
+}

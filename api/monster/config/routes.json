@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/monsters",
+      "handler": "monster.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monsters/count",
+      "handler": "monster.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monsters/:id",
+      "handler": "monster.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/monsters",
+      "handler": "monster.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/monsters/:id",
+      "handler": "monster.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/monsters/:id",
+      "handler": "monster.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
